@@ -4,13 +4,11 @@
 #Input and Print Functions
 
 
-Integer1 = input("enter your number: ")
-
-Integer1 = int(Integer1)
+Integer1 = int(input("enter your number: "))
 
 print("You entered:", Integer1)
-Integer1, print("squared is:", Integer1*2)
+print(Integer1, "squared is:", Integer1**2)
 print("And")
-Integer2 = input("Enter another number: ")
-Integer2 = int(Integer2)
+Integer2 = (int(input("Enter another number: ")))
+print(Integer1 + Integer2),(Integer1 + Integer2)
 
