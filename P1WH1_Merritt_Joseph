@@ -1,0 +1,16 @@
+#Josepeh Merritt
+#18 February 2024
+#P1WH1
+#Input and Print Functions
+
+
+Integer1 = input("enter your number: ")
+
+Integer1 = int(Integer1)
+
+print("You entered:", Integer1)
+Integer1, print("squared is:", Integer1*2)
+print("And")
+Integer2 = input("Enter another number: ")
+Integer2 = int(Integer2)
+
