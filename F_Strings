@@ -1,0 +1,12 @@
+#F-strings
+
+pay = 600
+heat = 50.25
+rent = 300.6
+
+print(f"weekly Pay: ${pay:.2f}")
+print(f"heat: ${heat:.2f}")
+print(f"rent: ${rent:.2f}")
+
+print(f"Combined Bill: ${ (heat + rent):.2f}")
+
