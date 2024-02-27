@@ -7,3 +7,4 @@ student2 = input("Enter a student's name")
 print("The first student's name is", student1)
 
 print("The second student's name is", student2)
+
