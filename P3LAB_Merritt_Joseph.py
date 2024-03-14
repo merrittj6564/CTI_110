@@ -5,6 +5,9 @@
 #Get amount of changed owed from user
 change = int(input("Enter an amount of change as integer: "))
 
+if change == 0:
+    print("No change")
+
 #Calculate the amount of each coin needed
 #integer division - //
 
