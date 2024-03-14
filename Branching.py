@@ -32,5 +32,18 @@ if name == "Bob":
         print("You're a youngin")    
 else:
     print("You're not Bob!")
+...
+#elif statement
+grade = 85
 
+if grade >= 90:
+    print("A")
+
+elif grade >= 80:
+    print("B")    
+
+elif grade >= 70:
+    print("C")    
+else: #if grade is 69 or lower
+    print("Your grade is kinda low")    
 
