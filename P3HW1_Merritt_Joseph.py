@@ -1,42 +1,50 @@
 #Joseph Merritt
 #16 March 2024
 #P3HW1
-#Debug
+#Grading Lists
 
 # This program takes a number grade , determines average and displays letter grade for average.
+nums = []
 
 # Enter grades for six modules
 
-mod_1 = input("Enter grade for Module 1: ")
-mod_2 = input("Enter grade for Module 2: ")
-mod_3 = input("Enter grade for Module 3: ")
-mod_4 = input("Enter grade for Module 4: ")
-mod_5 = input("Enter grade for Module 5: ")
-mod_6 = input("Enter grade for Module 6: ")
+nums.append(float(input("Enter a grade for Module 1: ")))
+nums.append(float(input("Enter a grade for Module 2: ")))
+nums.append(float(input("Enter a grade for Module 3: ")))
+nums.append(float(input("Enter a grade for Module 4: ")))
+nums.append(float(input("Enter a grade for Module 5: ")))
+nums.append(float(input("Enter a grade for Module 6: ")))
 
 # add grades entered to a list
 print("\n------------Results-------------\n")
+grades = nums
 
-grades = [mod_1, mod_2, mod_3, mod_4, mod_5, mod_6]
 # TO DO: determine lowest, highest , sum and average for grades
 
-low = min(grades)
-high = max(grades)
-sum = (mod_1 + mod_2 + mod_3 + mod_4 + mod_5 + mod_6)
-avg = sum(grades) / 6
+list_min = min(grades)
+print(f"Lowest Grade: {list_min}")
+
+list_max = max(grades)
+print(f"Highest Grade: {list_max}")
+
+list_sum = sum(grades)
+print(f"Sum of Grades: {list_sum}")
+
+list_avr = sum(grades) / 6
+print(f"Average:  {list_avr:.2f}")
 
 print("------------------------------------")
 
 # determine letter grade for average
 
-if avg >= 90:
+if list_avr >= 90:
     print("Your grade is: A")
 
-elif avg >= 80:
+elif list_avr >= 80:
  print("Your grade is: B")
 
-elif avg >= 70:
+elif list_avr >= 70:
  print("Your grade is: C")
 
-elif avg <= 69: 
+elif list_avr <= 69: 
     print("Your grade is: F")
