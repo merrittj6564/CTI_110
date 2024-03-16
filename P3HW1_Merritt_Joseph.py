@@ -1,7 +1,7 @@
 #Joseph Merritt
 #16 March 2024
 #P3HW1
-#Grading Lists
+#Grading Lists - Branching
 
 # This program takes a number grade , determines average and displays letter grade for average.
 nums = []
