@@ -22,7 +22,7 @@ grades = [mod_1, mod_2, mod_3, mod_4, mod_5, mod_6]
 
 low = min(grades)
 high = max(grades)
-sum = sum(grades)
+sum = [mod_1 + mod_2 + mod_3 + mod_4 + mod_5 + mod_6]
 avg = sum(grades) / 6
 
 print("------------------------------------")
