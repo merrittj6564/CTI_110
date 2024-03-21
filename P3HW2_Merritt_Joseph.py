@@ -3,3 +3,10 @@
 #P3HW2
 #Salary
 
+var1 = float(input("Enter a value with a decimal: "))
+var2 = float(input("Enter a value with a decimal: "))
+
+print("Variable 1     Variable 2")
+print("--------------------------")
+print(f'{var1} {var2}')
+print(f'{var1:<15.2f} {var2:<10.2f}')
