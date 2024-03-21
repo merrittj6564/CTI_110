@@ -29,4 +29,4 @@ gross_pay = OT_pay + reg_pay
 
     
 
-print(f'{hrs_worked:<15.2f} {pay_rate:<10.2f} {OT_hrs:<10.2f} {OT_pay:<15.2f}{reg_pay:<15.2f}{gross_pay:<15.2f}')
+print(f'{hrs_worked:<15.2f} {pay_rate:<10.2f} {OT_hrs:<10.2f} ${OT_pay:<13.2f}${reg_pay:<15.2f}${gross_pay:<15.2f}')
