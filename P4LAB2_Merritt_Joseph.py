@@ -7,7 +7,7 @@ num2 = int(input("Enter a num2: "))
 
 #While loop - as long as num1 is smaller than num2, increase by 5 each
 
-while num1 > num2: #Bad
+while num1 > num2:
     print("First number must be smaller")
     num1 = int(input("Enter a num1: "))
     num2 = int(input("Enter a num2: "))
