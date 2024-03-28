@@ -12,5 +12,8 @@ while num1 > num2:
     num1 = int(input("Enter a num1: "))
     num2 = int(input("Enter a num2: "))
 #Code will happen ONLY when the loop breaks
-print("You did it right!")    
-        
+print("You did it right!") 
+
+#Print values in increment of 5
+for number in range(num1, num2+1, 5):
+    print(number)
