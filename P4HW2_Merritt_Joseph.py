@@ -16,14 +16,12 @@ while var != "Done":
     print("---------------------------------------------------------------------------")
     print(f"\n{'Hours Worked':<15}{'Pay Rate':<10}{'OverTime':<10}{'OverTime Pay':<15}{'RegHour Pay':<15} {'Gross Pay':<10}")
     print("---------------------------------------------------------------------------")
-
     if hrs_worked >= 41:
         reg_hrs = 40
         OT_hrs = hrs_worked - 40
     else: #no overtime exists
         reg_hrs = hrs_worked
         OT_hrs = 0
-
     OTpay_rate = pay_rate * 1.5
     reg_pay = reg_hrs * pay_rate
     OT_pay = OT_hrs * OTpay_rate
