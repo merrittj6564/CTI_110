@@ -28,7 +28,7 @@ while var != "Done":
     gross_pay = OT_pay + reg_pay
     var = input("Enter employee's name or 'Done' to terminate: ")
 
-    num_empl = var + 1
+    num_empl = var +1
     paid_over = OT_pay * num_empl
     paid_reghrs = reg_pay * num_empl
     paid_gross = gross_pay * num_empl
