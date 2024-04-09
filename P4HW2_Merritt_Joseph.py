@@ -29,3 +29,13 @@ while var != "Done":
     OT_pay = OT_hrs * OTpay_rate
     gross_pay = OT_pay + reg_pay
     var = input("Enter employee's name or 'Done' to terminate: ")
+
+    num_empl = var + 1
+    paid_over = OT_pay * num_empl
+    paid_reghrs = reg_pay * num_empl
+    paid_gross = gross_pay * num_empl
+
+print(f"Total number of employees entered:, {num_empl} ")
+print(f"Total amount paid for overtime:, {paid_over} ")
+print(f"Total amount paid for regular hours:, {paid_reghrs} ")
+print(f"Total amount paid in gross:, {paid_gross} ")
