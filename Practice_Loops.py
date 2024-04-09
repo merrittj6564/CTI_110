@@ -42,3 +42,21 @@ while run_again == "y":
 #At this point, loop has been broken
 print("Program has ended, goodbye!")    
         
+#Create incrementer variable
+my_num = 0
+#How many times the loop executes
+num_loops = 0
+
+while run_again != "no":
+    #increment num_loops
+    num_loops += 1
+
+    integer = int(input("give me a number:"))
+    my_num += integer
+
+    #Control the loop - without it, its in an infinite loop
+    run_again = input("Would you like to run again?")
+
+#Break the loop
+print(f"The loop ran {num_loops} times") 
+print(f"The sum of the value of the loops is")   
