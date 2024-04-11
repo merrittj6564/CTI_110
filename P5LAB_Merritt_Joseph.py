@@ -67,5 +67,8 @@ def show_avail_items(dictionary):
     for key, value in dictionary.items():
         print(f"{key:<15}${value:.2f}")
     print("--------------------------------------")    
-food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89}
-show_avail_items(food_dictionary)        
+
+#Main Function
+def main():
+    food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89}
+    show_avail_items(food_dictionary)        
