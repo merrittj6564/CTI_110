@@ -60,6 +60,3 @@ def disperse_change(change):
             print("Penny")
         else:
             print("Pennies")
-
-#Test it out. Call it.
-disperse_change(1248)
