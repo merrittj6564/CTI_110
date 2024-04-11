@@ -62,7 +62,10 @@ def disperse_change(change):
             print("Pennies")
 
 def show_avail_items(dictionary):
+    print(f"{'Grocery Items':<15}{'Price'}")
+    print("--------------------------------------")
     for key, value in dictionary.items():
         print(f"{key:<15}${value:.2f}")
+    print("--------------------------------------")    
 food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89}
 show_avail_items(food_dictionary)        
