@@ -84,5 +84,9 @@ def add_items(dictionary):
 def main():
     food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89, "turkey":6.99, "cheese":4.00, "pepsi":7.89, "eggs":3.50, "bread":3.00}
     show_avail_items(food_dictionary)
+
+    cart = add_items(food_dictionary)
+    print(cart)
+
 #Call the Main Function
 main()         
