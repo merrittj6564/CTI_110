@@ -86,7 +86,10 @@ def main():
     show_avail_items(food_dictionary)
 
     cart = add_items(food_dictionary)
-    print(cart)
+    print("Items in your cart")
+    for item in cart:
+        print(item)
+
 
 #Call the Main Function
 main()         
