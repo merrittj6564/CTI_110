@@ -89,6 +89,11 @@ def calc_totals(cart, dictionary):
         subtotal += dictionary[item]
     tax = subtotal * .07
     final_total = tax + subtotal
+    print()
+    print(f"SUBTOTAL:          {subtotal:.2f}")
+    print()
+    print(f"TAX:          {tax:.2f}")
+    print(f"TOTAL:          {final_total:.2f}")
     return subtotal, tax, final_total
 
 
