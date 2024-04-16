@@ -78,7 +78,17 @@ def add_items(dictionary):
             print(f"{choice} is not in stock")
         choice = input("Enter an item to add to the cart or type 'end' to stop:")
     return cart          
-        
+
+def calc_totals(cart, dictionary):
+    subtotal = 0
+    for item in cart:
+        subtotal += dictionary[item]
+    tax = subtotal * .07
+    final_total = tax + subtotal
+    return subtotal, tax, final_total
+
+
+
 
 #Main Function
 def main():
@@ -86,9 +96,14 @@ def main():
     show_avail_items(food_dictionary)
 
     cart = add_items(food_dictionary)
-    print("Items in your cart")
+    print("Items in your cart:")
     for item in cart:
         print(item)
+
+    subtotal, tax, final_total = calc_totals(cart, food_dictionary)
+    print(subtotal)
+    print(tax)
+    print(final_total)
 
 
 #Call the Main Function
