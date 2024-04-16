@@ -70,7 +70,7 @@ def show_avail_items(dictionary):
 
 #Main Function
 def main():
-    food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89}
+    food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89, "turkey":6.99, "cheese":4.00, "pepsi":7.89, "eggs":3.50, "bread":3.00}
     show_avail_items(food_dictionary)
 #Call the Main Function
 main()         

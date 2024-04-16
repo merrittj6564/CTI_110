@@ -25,3 +25,9 @@ def add(a, b, c):
 returned_value = add(3, 4, 5)
 print(returned_value)
 '''
+
+#All programs have a main function
+def main():
+
+#Call the main function
+main()
