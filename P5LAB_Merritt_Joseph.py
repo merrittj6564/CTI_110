@@ -68,6 +68,18 @@ def show_avail_items(dictionary):
         print(f"{key:<15}${value:.2f}")
     print("--------------------------------------")    
 
+def add_items(dictionary):
+    cart = []
+    choice = input("Enter an item to add to the cart or type 'end' to stop:")
+    while choice != "end":
+        if choice in dictionary.keys():
+            cart.append(choice)
+        else: 
+            print(f"{choice} is not in stock")
+        choice = input("Enter an item to add to the cart or type 'end' to stop:")
+    return cart          
+        
+
 #Main Function
 def main():
     food_dictionary = {"apples":3.69, "berries":4.00, "chocolate":2.89, "turkey":6.99, "cheese":4.00, "pepsi":7.89, "eggs":3.50, "bread":3.00}
