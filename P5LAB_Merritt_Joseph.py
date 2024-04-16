@@ -90,10 +90,10 @@ def calc_totals(cart, dictionary):
     tax = subtotal * .07
     final_total = tax + subtotal
     print()
-    print(f"SUBTOTAL:          {subtotal:.2f}")
+    print(f"SUBTOTAL:            ${subtotal:.2f}")
     print()
-    print(f"TAX:          {tax:.2f}")
-    print(f"TOTAL:          {final_total:.2f}")
+    print(f"TAX:                 ${tax:.2f}")
+    print(f"TOTAL:               ${final_total:.2f}")
     return subtotal, tax, final_total
 
 
@@ -110,10 +110,6 @@ def main():
         print(item)
 
     subtotal, tax, final_total = calc_totals(cart, food_dictionary)
-    print(subtotal)
-    print(tax)
-    print(final_total)
-
 
 #Call the Main Function
 main()         
