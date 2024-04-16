@@ -80,8 +80,12 @@ def add_items(dictionary):
     return cart          
 
 def calc_totals(cart, dictionary):
+    print("Grocery Receipt")
+    print("----------------------------")
+    print()
     subtotal = 0
     for item in cart:
+        print(f"{item:<20} ${dictionary[item]:.2f}")
         subtotal += dictionary[item]
     tax = subtotal * .07
     final_total = tax + subtotal
