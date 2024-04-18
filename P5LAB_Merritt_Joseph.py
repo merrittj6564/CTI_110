@@ -110,6 +110,17 @@ def main():
         print(item)
 
     subtotal, tax, final_total = calc_totals(cart, food_dictionary)
+    print()
+    print(f"You owe ${final_total:.2f} for the goceries")
+    print()
+    cash_given = float(input("How much cash will you put in the self-checkout? "))
+    print()
+    print(f"The change owed to you is ${cash_given - final_total:.2f}")
+    print("Dispensing...")
+    print()
+    change_owed = round((cash_given - final_total) * 100)
+    print()
+    disperse_change(change_owed)
 
 #Call the Main Function
 main()         
