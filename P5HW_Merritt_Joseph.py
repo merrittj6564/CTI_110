@@ -41,13 +41,12 @@ def main():
     while menu_opt != 3:
         if menu_opt == 1:
             answer = sum(num1, num2)
-            
-            print()
+            guessing(answer)
 
 
         if menu_opt == 2:
-            minus()  
-    menu_opt = int(input("Please choose one of the menu options: "))
+            '''minus() ''' 
+        menu_opt = int(input("Please choose one of the menu options: "))
 main()
 #At this point, loop has been broken
 print("Program has ended, goodbye!") 
