@@ -8,6 +8,11 @@ def sum(num1, num2):
     print(f"{num1} + {num2}")
     result = num1 + num2
     return result
+
+def sub(num1, num2):
+    print(f"{num1} - {num2}")
+    result = num1 - num2
+    return result
     
 def guessing(answer):    
     guess = int(input("Enter an answer: "))
@@ -45,7 +50,8 @@ def main():
 
 
         if menu_opt == 2:
-            '''minus() ''' 
+            answer = sub(num1, num2)
+            guessing(answer)
         menu_opt = int(input("Please choose one of the menu options: "))
 main()
 #At this point, loop has been broken
